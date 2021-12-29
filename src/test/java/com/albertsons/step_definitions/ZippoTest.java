@@ -1,6 +1,5 @@
 package com.albertsons.step_definitions;
 
-import com.albertsons.utilities.ConfigurationReader;
 import io.cucumber.java.en.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
