@@ -21,10 +21,6 @@ public class ZippoTest2 {
     public void user_should_get_status_code(Integer int1) {
         assertEquals(200,response.statusCode());
     }
-    @Then("User should see content type as application\\/json")
-    public void user_should_see_content_type_as_application_json() {
-
-    }
 
     @Then("User should see content type as {string}")
     public void userShouldSeeContentTypeAs(String contType) {
