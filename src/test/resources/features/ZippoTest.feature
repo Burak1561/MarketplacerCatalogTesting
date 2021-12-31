@@ -11,4 +11,5 @@ Feature: User should use zippopotam.us easily
    Scenario: Getting information about Fairfax
      Given User send GET request using path params state "VA" and city "Fairfax"
      And User should get status code 200
+     And User should see latitude equal "38.8458"
      Then User should see content type as "application/json"
