@@ -11,7 +11,7 @@ public class ZippoTest2 {
 
     @Given("User send GET request using path params state {string} and city {string}")
     public void user_send_get_request_using_path_params_state_and_city(String state, String city) {
-        response = ApiUtil.GET("/us/{state}/{city}","state",state,"city",city);
+        response = ApiUtil.get("/us/{state}/{city}","state",state,"city",city);
     }
     @When("User should get status code {int}")
     public void user_should_get_status_code(Integer int1) {

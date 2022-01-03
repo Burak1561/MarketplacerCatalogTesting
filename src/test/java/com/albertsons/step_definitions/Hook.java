@@ -14,6 +14,7 @@ public class Hook {
     public static RequestSpecification requestSpec;
     public static ResponseSpecification responseSpec;
     public static RequestSpecification userSpec;
+    public static String requestJsonBody;
 
     @BeforeAll
     @Given("User connected with api baseUrl")

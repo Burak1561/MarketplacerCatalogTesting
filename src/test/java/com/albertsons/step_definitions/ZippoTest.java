@@ -9,7 +9,7 @@ public class ZippoTest {
     Response response;
     @Given("User use zipcode {int} as a path param on the GET request")
     public void user_use_zipcode_as_a_path_param_on_the_get_request(int zipCode) {
-       response = ApiUtil.GET("/us/{zipcode}", "zipcode", zipCode);
+       response = ApiUtil.get("/us/{zipcode}", "zipcode", zipCode);
     }
     @When("Status code must be {int}")
     public void status_code_must_be(int code) {
