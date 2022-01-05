@@ -1,6 +1,5 @@
 package com.albertsons.step_definitions;
 
-import com.albertsons.utilities.ApiUtil;
 import io.cucumber.java.en.*;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -11,7 +10,7 @@ public class ZippoTest2 {
 
     @Given("User send GET request using path params state {string} and city {string}")
     public void user_send_get_request_using_path_params_state_and_city(String state, String city) {
-        response = ApiUtil.get("/us/{state}/{city}","state",state,"city",city);
+        response = Hook.get("/us/{state}/{city}","state",state,"city",city);
     }
     @When("User should get status code {int}")
     public void user_should_get_status_code(Integer int1) {
